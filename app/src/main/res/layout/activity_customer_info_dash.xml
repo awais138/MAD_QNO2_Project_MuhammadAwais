@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9EB5995A"
+    tools:context=".Customer_info_dash">
+
+    <TextView
+        android:id="@+id/review_name"
+        android:layout_width="263dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Profile Review"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="333dp"
+        android:layout_height="321dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#976C07"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="214dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            app:cardBackgroundColor="#F7F3ECE2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:autoText="false"
+                android:background="#8BC34A"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:text="Gmail " />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="201dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="#F8F6F3"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/contact_PR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#8BC34A"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:text="Contact" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="302dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="140dp"
+            app:cardBackgroundColor="#F8F6F3"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/Descriptioin_PR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#8BC34A"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:text="Description" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="66dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="230dp"
+            app:srcCompat="@drawable/map" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="236dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="230dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/map_info"
+                android:layout_width="206dp"
+                android:layout_height="match_parent"
+                android:background="#8BC34A"
+                android:paddingStart="5dp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="127dp"
+        android:layout_height="122dp"
+        android:src="@drawable/avtar"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <ImageView
+        android:id="@+id/image_whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <ImageView
+        android:id="@+id/chat_togo"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/fui_ic_check_circle_black_128dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
